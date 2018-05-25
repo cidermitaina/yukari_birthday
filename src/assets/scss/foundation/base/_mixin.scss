@@ -1,0 +1,104 @@
+@charset "utf-8";
+/**
+ * function
+ * 値を返す
+ */
+@function retina($size) {
+    @return $size * $retinaRatio;
+}
+
+
+/**
+ * mixins
+ * ブロックを返す
+ */
+
+/*
+デバイス定義
+ */
+// $sp: "only screen and (max-width:" + $breakPoint + ")"; // @media #{$sp} {}
+
+@mixin sp {
+    @media print, screen and (max-width: $breakPoint) {
+        @content;
+    }
+}
+@mixin pc {
+    @media print, screen and (min-width: $breakPoint+1) {
+        @content;
+    }
+}
+@mixin tab {
+    @media print, screen and (max-width: 800px) {
+        @content;
+    }
+}
+/*
+スマホの文字指定専用（横幅640px想定）
+font-sizeにvwを設定
+ */
+@mixin vw($size) {
+    font-size:( $size /2 ) *1px;
+    font-size:( $size /750 *100 ) *1vw;
+}
+
+@mixin fs($size) {
+    font-size:$size+px;
+    font-size: ($size / $base_fs) * 1rem;
+}
+
+
+/*
+clearfix
+ */
+@mixin cf {
+    zoom: 1;
+    &:before,
+    &:after {
+        display: block;
+        height: 0;
+        visibility: hidden;
+        content: "\0020";
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/*
+iOS smooth scroll
+ */
+@mixin smoothScroll {
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/*
+opacity
+ */
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacityIE: $opacity * 100;
+    filter: alpha(opacity=$opacityIE);
+}
+
+/*
+fade
+ */
+@mixin fade {
+    transition:opacity 0.1s ease-in-out 0s;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+@mixin noFade {
+    &:hover {
+        opacity: 1;
+    }
+}
+
+//インデント
+@mixin indent {
+    text-indent: -1em;
+    padding-left: 1em;
+}

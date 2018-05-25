@@ -1,0 +1,67 @@
+@charset "utf-8";
+/**
+ * define valiables
+ * 各scssファイルでよく使う値を変数定義
+ */
+
+//@font-face {
+//    font-family: 'Noto Sans Japanese';
+//    font-style: normal;
+//    font-weight: 300;
+//    src:
+//        url(/assets/fonts/NotoSansCJKjp-DemiLight.otf) format('opentype');
+//}
+//
+//@font-face {
+//    font-family: 'Noto Sans Japanese';
+//    font-style: normal;
+//    font-weight: 400;
+//    src: local('NotoSansJP-Regular.otf'),
+//        url(/assets/fonts/NotoSansCJKjp-Regular.otf) format('opentype');
+//}
+//@font-face {
+//    font-family: 'Noto Sans Japanese';
+//    font-style: bold;
+//    font-weight: 600;
+//    src: local('NotoSansJP-Medium.otf'),
+//        url(/assets/fonts/NotoSansCJKjp-Medium.otf) format('opentype');
+//}
+
+//ブレイクポイント
+$breakPoint: 750px;
+
+
+//サイト全体のフォントカラー
+$color_txt: #000;
+
+//リンクの設定
+$color_lnk: #000;//リンクのカラー
+$link_deco:none;//リンクのデコレーション設定
+
+//フォーム系
+$color_key: #15a9d8;
+$color_placeholder: #e2e2e2;
+$color_bg: #fff;
+$color_contents: #eeeceb;
+$color_consultant: #d29b00;
+$color_researcher: #1b4b7d;
+
+//baseのfont-size
+$base_fs:15;
+$imgPath:"/assets/img/";
+$font-family-basic:
+    "Sawarabi Gothic",
+    "ヒラギノ角ゴ ProN W3",            // Japanese font for MAC OS X v10.5 or later
+    "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ Pro W3",            // Japanese font for the previous MAC OS X v10.4
+    "Hiragino Kaku Gothic Pro",
+    "ヒラギノ丸ゴ ProN W4",            // Japanese font for MAC OS X v10.5 or later
+    "Hiragino Maru Gothic ProN",
+    "ヒラギノ丸ゴ Pro W4",            // Japanese font for the previous MAC OS X v10.4
+    "Hiragino Maru Gothic Pro",
+    "メイリオ",                        // Japanese font for Windows8/7/Vista
+    "Meiryo",
+    "ＭＳ Ｐゴシック",                // Japanese font for the previous WindowsXP
+    "MS PGothic",
+    Sans-Serif                        // others
+;

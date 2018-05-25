@@ -1,0 +1,15 @@
+@charset "utf-8";
+.l{
+    &-footer{
+        position: relative;
+        text-align: center;
+        padding: 20px 0 10px;;
+        small{
+            letter-spacing: 2px;
+            @include vw(25);
+            @include pc {
+                font-size: 16px;
+            }
+        }
+    }
+}

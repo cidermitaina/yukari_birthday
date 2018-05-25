@@ -1,0 +1,20 @@
+{
+    "path":
+    {
+        "img":"/assets/img/",
+        "css":"/assets/css/",
+        "js":"/assets/js/",
+        "ico":"/assets/img/ico/favicon.ico",
+        "appico":"/assets/img/ico/appico.png"
+    },
+    "og":
+    {
+        "img":"/assets/img/og/og.jpg",
+        "url":""
+    },
+    "link":
+    {
+        "_comment_":"ホーム",
+        "home":"/"
+    }
+}
