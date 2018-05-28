@@ -3007,6 +3007,7 @@ blockquote:before {
     color: #ef9a9a; }
   @media print, screen and (min-width: 751px) {
     .p-yukari__chatItm:before {
+      top: -12px;
       font-size: 45px; } }
   .p-yukari__chatItm--yamakami:before {
     color: #6495ed; }
@@ -3029,7 +3030,7 @@ blockquote:before {
       content: " "; }
 
 .p-yukari__chatTxt-area {
-  padding: 0.8em 1.0rem 0.8rem 1.0rem;
+  padding: 0.8em 1.0rem 0.8em 1.0rem;
   font-size: 14px;
   font-size: 3.73333vw;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
@@ -3060,21 +3061,37 @@ blockquote:before {
   font-size: 14.5px;
   font-size: 3.86667vw;
   font-weight: 700;
-  opacity: 0.7; }
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 3em; }
   @media print, screen and (min-width: 751px) {
     .p-yukari__chatName {
-      font-size: 18px; } }
+      font-size: 18px;
+      left: calc(2% + 50px); } }
 
 .p-yukari__chatTxt {
   font-size: 14px;
   font-size: 3.73333vw;
-  padding-top: 10px;
+  padding: 5px 0;
   line-height: 1.3;
   opacity: 0.7; }
   @media print, screen and (min-width: 751px) {
     .p-yukari__chatTxt {
       font-size: 18px;
-      padding-top: 20px; } }
+      padding: 10px 0; } }
+
+.p-yukari__aaTxt {
+  font-family: monospace,"ＭＳ ゴシック", "MS Gothic", Osaka−等幅; }
+
+.p-yukari__custom01 {
+  color: #ff3399;
+  font-family: 'Monotype Corsiva',cursive;
+  font-size: 15px;
+  font-size: 4vw; }
+  @media print, screen and (min-width: 751px) {
+    .p-yukari__custom01 {
+      font-size: 20px; } }
 
 .c-oval {
   height: 300px;
