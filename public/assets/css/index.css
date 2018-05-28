@@ -1637,7 +1637,7 @@ blockquote:before {
     font-size: 32.5px;
     font-size: 8.66667vw;
     position: absolute;
-    top: -7%;
+    top: -.2em;
     left: 2%;
     z-index: 4;
     color: #ef9a9a; }
