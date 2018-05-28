@@ -118,7 +118,7 @@
             }
         }
         &__chatTxt-area{
-            padding: 0.8em 1.0rem 0.8rem 1.0rem;
+            padding: 0.8em 1.0rem 0.8em 1.0rem;
             @include vw(28);
             box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
             background: #fff;
@@ -162,6 +162,18 @@
                 font-size: 18px;
                 padding-top: 20px;
             }
+        }
+        &__aaTxt{
+             font-family:monospace,"ＭＳ ゴシック", "MS Gothic", Osaka−等幅;
+        }
+        &__custom01{
+            color: #ff3399;
+            font-family:'Monotype Corsiva',cursive;
+            @include vw(30);
+            @include pc {
+                font-size: 20px;
+            }
+
         }
     }
 }
