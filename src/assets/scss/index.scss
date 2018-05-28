@@ -6,9 +6,9 @@
 @import "foundation/base/_init";
 
 /*foundation vender*/
-@import "foundation/vender/_slick";
-@import "foundation/vender/_slick-theme";
-@import "foundation/vender/_animate";
+@import "foundation/vender/_core";
+@import "foundation/vender/_easing";
+@import "foundation/vender/_animations";
 
 /*object*/
 @import "object/_btn";

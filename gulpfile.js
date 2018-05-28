@@ -26,7 +26,7 @@ const uglify = require('gulp-uglify');
 
 //path
 const SRC = './src';
-const HTDOCS = './public';
+const HTDOCS = './docs';
 const BASE_PATH = '/';
 const DEST = `${HTDOCS}${BASE_PATH}`;
 
@@ -123,7 +123,7 @@ gulp.task('copy', () => {
   return gulp
     .src('./src/**/*.pdf')
     .pipe(plumber())
-    .pipe(gulp.dest('./public/'))
+    .pipe(gulp.dest('./docs/'))
 })
 
 //image min
@@ -139,7 +139,7 @@ gulp.task('imagemin', () => {
         pngquant({ speed: 1 })
       ])
     )
-    .pipe(gulp.dest('./public/'))
+    .pipe(gulp.dest('./docs/'))
 })
 
 //clean

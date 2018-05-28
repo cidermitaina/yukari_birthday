@@ -22,6 +22,17 @@
                 top: 0;
             }
         }
+        &__arrow{
+            position: absolute;
+            bottom: 25px;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            i{
+                font-size: 35px;
+                color: lightyellow;
+            }
+        }
         //p-yukari__mv
         &__mv{
             position: relative;
@@ -272,4 +283,7 @@
 	transform: translatex(-50%);
 	top: 229px;
 	z-index: -1;
+    @include pc {
+        left: 52%;
+    }
 }

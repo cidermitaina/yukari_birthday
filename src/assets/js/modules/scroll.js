@@ -9,8 +9,10 @@ export default () => {
     $(window).scroll(function () {
         if ($(this).scrollTop() > offsetY) {
             $jsBg.fadeIn('slow');
+            $('.js-arrow').fadeOut();
         } else {
             $jsBg.fadeOut('slow');
+            $('.js-arrow').fadeIn();
         }
     });
 };
