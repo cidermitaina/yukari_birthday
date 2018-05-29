@@ -1,10 +1,4 @@
 @charset "utf-8";
-main{
-    min-width: 1400px;
-    @include sp {
-        min-width: 0;
-    }
-}
 .p{
     &-yukari{
         &__bg{
