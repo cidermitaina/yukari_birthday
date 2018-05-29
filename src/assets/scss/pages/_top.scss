@@ -2,7 +2,7 @@
 main{
     min-width: 1400px;
     @include sp {
-        min-width: auto;
+        min-width: 0;
     }
 }
 .p{

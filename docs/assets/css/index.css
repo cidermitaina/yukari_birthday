@@ -1147,7 +1147,7 @@ main {
   min-width: 1400px; }
   @media print, screen and (max-width: 750px) {
     main {
-      min-width: auto; } }
+      min-width: 0; } }
 
 .p-yukari__bg {
   background: #ffccbc;
