@@ -9947,12 +9947,18 @@ var _scroll = __webpack_require__(/*! ./modules/scroll */ "./src/assets/js/modul
 
 var _scroll2 = _interopRequireDefault(_scroll);
 
+var _shake = __webpack_require__(/*! ./modules/shake */ "./src/assets/js/modules/shake.js");
+
+var _shake2 = _interopRequireDefault(_shake);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/*import*/
 document.addEventListener('DOMContentLoaded', function () {
     (0, _aos2.default)();
     (0, _scroll2.default)();
-}); /*import*/
+    (0, _shake2.default)();
+});
 
 /***/ }),
 
@@ -10007,6 +10013,34 @@ exports.default = function () {
             $('.js-arrow').fadeIn();
         }
     });
+};
+
+/***/ }),
+
+/***/ "./src/assets/js/modules/shake.js":
+/*!****************************************!*\
+  !*** ./src/assets/js/modules/shake.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+exports.default = function () {
+	window.addEventListener('devicemotion', function (event) {
+		var gv = event.accelerationIncludingGravity;
+		if (gv.z >= 9) {
+			$('.c-oval,.c-cakes').stop().addClass('show');
+		} else if (gv.z < 8) {
+			$('.c-oval,.c-cakes').stop().removeClass('show');
+		}
+	});
 };
 
 /***/ })

@@ -193,7 +193,12 @@
         }
     }
 }
-
+.c-cakes{
+	&.show{
+		opacity: 0;
+		transition: .5s opacity;
+	}
+}
 
 .c-oval {
 	height: 300px;
@@ -204,6 +209,10 @@
 	position: absolute;
 	top: 50px;
 	background: white;
+	&.show{
+		background: url(../yamakami.jpg);
+		background-size: contain;
+	}
 	z-index: -1;
     @include sp {
         height: 220px;

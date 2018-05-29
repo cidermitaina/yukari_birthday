@@ -1305,6 +1305,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .p-yukari__custom01 {
       font-size: 20px; } }
 
+.c-cakes.show {
+  opacity: 0;
+  transition: .5s opacity; }
+
 .c-oval {
   height: 300px;
   width: 300px;
@@ -1317,6 +1321,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   top: 50px;
   background: white;
   z-index: -1; }
+  .c-oval.show {
+    background: url(../yamakami.jpg);
+    background-size: contain; }
   @media print, screen and (max-width: 750px) {
     .c-oval {
       height: 220px;
